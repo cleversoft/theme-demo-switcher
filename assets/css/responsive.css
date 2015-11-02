@@ -1,0 +1,189 @@
+/**
+ * Mobile
+ */
+#aside
+{
+	width: 190px;
+	padding: 15px;
+}
+
+#push.toggled
+{
+	-moz-transform: translateX(190px);
+	-webkit-transform: translateX(190px);
+	transform: translateX(190px);
+}
+
+img#preview
+{
+	left: 165px;
+}
+
+#frame_wrapper
+{
+    overflow: visible;
+}
+
+#responsive
+{
+    display: none;
+}
+
+.one_full,
+.one_half,
+.one_third,
+.two_third,
+.one_quarter,
+.one_fifth
+{
+    width: 100%;
+    padding-right: 0;
+}
+
+h1
+{
+	font-size: 180%;
+}
+
+h2
+{
+	font-size: 160%;
+}
+
+h3
+{
+	font-size: 150%;
+}
+
+h4
+{
+	font-size: 140%;
+}
+
+h5
+{
+	font-size: 130%;
+}
+
+h6
+{
+    font-size: 120%;
+}
+
+@media only screen and (max-width: 1200px){
+    .choose-theme{
+        position: static;
+    }
+    .choose-theme .theme-list{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .theme-list .theme-column{
+        width: 100%;
+    }
+    .theme-list .theme-thumb{
+        right: 0;
+        max-width: 180px;
+    }
+}
+	
+@media only screen and (min-width: 321px) {
+	
+}
+/**
+ * Tablets
+ */
+@media only screen and (min-width: 767px) {   
+    #aside
+	{
+		width: 250px;
+		padding: 35px;
+	}
+	
+	#push.toggled
+	{
+		-moz-transform: translateX(250px);
+		-webkit-transform: translateX(250px);
+		transform: translateX(250px);
+	}
+	
+	img#preview
+	{
+		left: 225px;
+	}
+}
+/**
+ * Tablets Landscape
+ */
+@media only screen and (min-width: 1023px) {     
+    .one_full
+    {
+        width: 100%;
+    }
+
+    .one_half
+    {
+        width: 50%;
+        padding-right: 50px;
+    }
+
+    .one_third
+    {
+        width: 33.33333%;
+        padding-right: 50px;
+    }
+    
+    .two_third
+    {
+        width: 66.66666%;
+        padding-right: 50px;
+    }
+
+    .one_quarter
+    {
+        width: 25%;
+        padding-right: 50px;
+    }
+    
+    .one_fifth
+    {
+        width: 20%;
+        padding-right: 50px;
+    }
+}
+/**
+ * Small Desktops
+ */
+@media only screen and (min-width: 1279px) {	
+	#frame_wrapper
+    {
+        overflow: hidden;
+    }
+    
+    #responsive
+    {
+        display: inline;
+    }
+}
+/**
+ * Large Desktops
+ */
+@media only screen and (min-width: 1599px) {
+
+}
+/* Fix IE */
+@media screen and (min-width:0\0) {
+    [class^="icon-"]:before,
+    [class*=" icon-"]:before
+    {
+        margin-top: -500px!important;
+    }
+    
+    #push.toggled
+	{
+		margin-left: 250px;
+	}
+}
