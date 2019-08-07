@@ -116,7 +116,7 @@ if (!isset($redirect)) :
             <span class="current-theme-name"><?php if ($theme_found != false): echo $current_theme_name . ' - ' . $current_theme_desc; endif; ?></span>
 
             <!-- purchase / close frame buttons -->
-            <ul class="right">
+            <ul class="right list-action-links">
                 <li class="support-link"><a href="<?php echo $support_url ?>"><i class="cs-font clever-icon-help"></i> Support</a></li>
                 <li class="docs-link"><a href="<?php echo $current_theme_docs_url ?>"><i class="cs-font clever-icon-tab"></i> Documentation</a></li>
                 <li class="purchase" rel="<?php echo $current_theme_purchase_url; ?>">

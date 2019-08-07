@@ -133,14 +133,14 @@ a
 }
 #switcher .theme-list ul li{
 	display: block;
-	border-bottom: 1px solid #F1F1F1;
 }
 .theme-list a:hover .theme-thumb{
 	display: block;
 }
 .theme-list a{
+	border-bottom: 1px solid #F1F1F1;
 	color: #363636;
-	display: inline;
+	display: block;
 	font-weight: normal;
 	text-transform: capitalize;
 	position: relative;
@@ -201,18 +201,12 @@ a
 	margin: 0;
 	padding: 0;
 }
-
-li.purchase a,
-li.remove_frame a
+.list-action-links li a
 {
 	background: #2b363e;
-	background: rgba( 255, 255, 255, 0.1 );
+
 	font-size: 12px;
 	float: left;
-}
-
-li.purchase a
-{
 	padding: 14px 18px 13px 18px;
 	margin-right: 1px;
 	i{
@@ -220,13 +214,20 @@ li.purchase a
 	}
 }
 
-li.remove_frame a 
+.list-action-links li.support-link a{
+	border-right: 1px solid rgba( 255, 255, 255, 0.1 );
+}
+.list-action-links li.purchase a,
+.list-action-links li.remove_frame a{
+	background: rgba( 255, 255, 255, 0.1 );
+}
+.list-action-links li.remove_frame a
 {
 	padding: 14px 18px;
+	margin:0;
 }
 
-li.purchase a:hover,
-li.remove_frame a:hover
+.list-action-links li a:hover
 {
 	background: #ffffff;
 	color: #2b363e;
