@@ -39,13 +39,12 @@
 
   	<link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-  	<link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css" />
-	<link rel="stylesheet" href="assets/owl-carousel/owl.theme.css" />
-	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="assets/css/minified.css.php" media="all" />
+  	<link rel="stylesheet" href="assets/slick/slick.css" />
+	<link rel="stylesheet" href="assets/clever-font/style.css" />
+	<link rel="stylesheet" href="assets/css/styles.css" media="all" />
 
     <script type="text/javascript" src="assets/js/jquery.js"></script>
-	<script type="text/javascript" src="assets/owl-carousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets/slick/slick.min.js"></script>
 	<script type="text/javascript" src="assets/js/application.js"></script>
 </head>
 
@@ -65,7 +64,7 @@
 			    </a>
 			    <!-- /logo -->
 				<div class="choose-theme">
-					<a class="themes-open" href="#">Choose Theme<i class="fa fa-angle-down"></i></a>
+					<a class="themes-open" href="#">Choose Theme<i class="cs-font clever-icon-down"></i></a>
 					<?php
 					$number_item = floor(count($theme_array)/4);
 					if(count($theme_array)%4) {
@@ -121,11 +120,11 @@
 	            <ul class="right">
 	                <li class="purchase" rel="<?php echo $current_theme_purchase_url; ?>">
 	                    <a href="<?php echo $current_theme_purchase_url; ?>" target="_blank" title="Purchase Theme">
-	                        <i class="icon-shopping-cart"></i> Purchase
+	                        <i class="cs-font clever-icon-cart-10"></i> Purchase
 	                    </a>
 	                </li>
 	                <li class="remove_frame" rel="<?php echo $current_theme_url; ?>">
-	                    <a href="<?php echo $current_theme_url; ?>" title="Remove Frame"><i class="icon-remove"></i></a>
+	                    <a href="<?php echo $current_theme_url; ?>" title="Remove Frame"><i class="cs-font clever-icon-close-1"></i></a>
 	                </li>
 	            </ul>
 	            <!-- /purchase / close frame buttons -->
