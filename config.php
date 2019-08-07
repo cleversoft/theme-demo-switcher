@@ -8,3 +8,4 @@ $demo_url    = "//demo.zootemplate.com/"; // your theme demos url, needs trailin
 $author      = "zootemplate.com"; // you
 $description = "ZooTemplate's Demo"; // description for titles & meta
 $ref         = "Zootemplate"; // themeforest referrer tag, adds ?ref=<username> to purchase link
+$support_url = 'https://support.zooextension.com';

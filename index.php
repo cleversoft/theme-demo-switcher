@@ -8,19 +8,25 @@ include('theme_list.php');
 
 if (!isset($redirect)) :
     foreach ($theme_array as $i => $theme) {
+        $theme_config = array_merge([
+            'id' => 'Untitled',
+            'desc' => 'Just another zootemplate.',
+            'url' => 'https://zootemplate.com',
+            'docs' => '#',
+            'purchase' => '#',
+            'responsive' => 'yes',
+            'thumb' => '',
+            'type' => 'wordpress-theme',
+        ], $theme);
         if ($theme['id'] == $current_theme) {
-            $current_theme_name = ucfirst($theme['id']);
-            $current_theme_url = $theme['url'];
-            $current_theme_purchase_url = $theme['purchase'];
-            $responsive = $theme['responsive'];
+            $current_theme_name = ucfirst($theme_config['id']);
+            $current_theme_desc = $theme_config['desc'];
+            $current_theme_url = $theme_config['url'];
+            $current_theme_docs_url = $theme_config['docs'];
+            $current_theme_purchase_url = $theme_config['purchase'];
+            $responsive = $theme_config['responsive'];
             $theme_found = true;
         }
-    }
-    if ($theme_found == false) {
-        $current_theme_name = $theme_array[0]['id'];
-        $current_theme_url = $theme_array[0]['url'];
-        $current_theme_purchase_url = $theme_array[0]['purchase'];
-        $responsive = $theme_array[0]['responsive'];
     }
     ?>
     <!doctype html>
@@ -29,7 +35,7 @@ if (!isset($redirect)) :
         <title><?php if ($theme_found == false) {
                 echo $description;
             } else {
-                echo 'Theme > ' . $current_theme_name;
+                echo $current_theme_name . ' - ' . $current_theme_desc;
             } ?></title>
 
         <!-- meta -->
@@ -65,7 +71,7 @@ if (!isset($redirect)) :
             </a>
             <!-- /logo -->
             <div class="choose-theme">
-                <a class="themes-open" href="#">Choose Theme<i class="cs-font clever-icon-down"></i></a>
+                <a class="themes-open" href="javascript:void(0)">Choose Theme<i class="cs-font clever-icon-down"></i></a>
                 <?php
                 $number_item = floor(count($theme_array) / 4);
                 if (count($theme_array) % 4) {
@@ -76,7 +82,7 @@ if (!isset($redirect)) :
                 <div class="theme-list">
                     <ul class="wrap-theme-list">
                         <?php foreach ($theme_array as $i => $theme) : ?>
-                            <li>
+                            <li class="type-<?php echo $theme['type'] ?>">
                                 <a href="?theme=<?php echo $theme['id']; ?>"
                                    rel="<?php echo $theme['url']; ?>,<?php echo $theme['purchase']; ?>">
 						<span class="theme-name">
@@ -94,8 +100,7 @@ if (!isset($redirect)) :
                             echo implode(' ', $theme_name); ?>
 						</span>
                                     <?php if ($theme['thumb'] != '') { ?>
-                                        <span class="theme-thumb"><img src="<?php echo $theme['thumb']; ?>"
-                                                                       alt="Theme Thumbnail"/></span>
+                                        <span class="theme-thumb"><img src="<?php echo $theme['thumb']; ?>" alt="Theme Thumbnail"/></span>
                                     <?php } ?>
                                 </a>
                             </li>
@@ -108,10 +113,12 @@ if (!isset($redirect)) :
             <!-- /theme selector toggle -->
 
             <!-- theme selector toggle -->
-            <span class="current-theme-name"><?php if ($theme_found != false): echo $current_theme_name; endif; ?></span>
+            <span class="current-theme-name"><?php if ($theme_found != false): echo $current_theme_name . ' - ' . $current_theme_desc; endif; ?></span>
 
             <!-- purchase / close frame buttons -->
             <ul class="right">
+                <li class="support-link"><a href="<?php echo $support_url ?>"><i class="cs-font clever-icon-help"></i> Support</a></li>
+                <li class="docs-link"><a href="<?php echo $current_theme_docs_url ?>"><i class="cs-font clever-icon-tab"></i> Documentation</a></li>
                 <li class="purchase" rel="<?php echo $current_theme_purchase_url; ?>">
                     <a href="<?php echo $current_theme_purchase_url; ?>" target="_blank" title="Purchase Theme">
                         <i class="cs-font clever-icon-cart-10"></i> Purchase
@@ -127,12 +134,9 @@ if (!isset($redirect)) :
             <!-- responsive theme preview icons -->
             <div id="responsive" class="right">
                 <ul>
-                    <li><a href="#" class="d" title="Desktop View"><img src="assets/img/icon-desktop.png"
-                                                                        alt="Desktop"/></a></li>
-                    <li><a href="#" class="t" title="Tablet View"><img src="assets/img/icon-tablet.png"
-                                                                       alt="Tablet"/></a></li>
-                    <li><a href="#" class="m" title="Mobile View"><img src="assets/img/icon-mobile.png"
-                                                                       alt="Mobile"/></a></li>
+                    <li><a href="javascript:void(0)" class="d" title="Desktop View"><img src="assets/img/icon-desktop.png" alt="Desktop"/></a></li>
+                    <li><a href="javascript:void(0)" class="t" title="Tablet View"><img src="assets/img/icon-tablet.png" alt="Tablet"/></a></li>
+                    <li><a href="javascript:void(0)" class="m" title="Mobile View"><img src="assets/img/icon-mobile.png" alt="Mobile"/></a></li>
                 </ul>
             </div>
             <!-- /responsive theme preview icons -->

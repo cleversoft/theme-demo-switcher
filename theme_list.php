@@ -2,9 +2,11 @@
     array(
         "id" 		 => "zt-sebian",
         "url" 		 => "http://zt-sebian.zoodemo.com/index.php/en/",
+        "desc" 		 => "Just another Joomla template",
+        "docs" 		 => "https://docs.zootemplate.com/zt-sebian",
         "purchase" 	 => "http://www.zootemplate.com/pricing",
         "responsive" => "yes",
-        "type"       => "joomla",
+        "type"       => "joomla-theme",
         "thumb"      => ""
     ),
     array(
