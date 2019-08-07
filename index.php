@@ -28,6 +28,14 @@ if (!isset($redirect)) :
             $theme_found = true;
         }
     }
+    if ($theme_found == false) {
+        $current_theme_name = ucfirst($theme_array[0]['id']);
+        $current_theme_desc = $theme_array[0]['desc'];
+        $current_theme_url = $theme_array[0]['url'];
+        $current_theme_docs_url = $theme_array[0]['docs'];
+        $current_theme_purchase_url = $theme_array[0]['purchase'];
+        $responsive = $theme_array[0]['responsive'];
+    }
     ?>
     <!doctype html>
     <html>
