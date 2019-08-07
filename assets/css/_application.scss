@@ -72,6 +72,10 @@ a
 .choose-theme{
 	float: left;
 	position: relative;
+	a{
+		display: inline;
+		padding:0;
+	}
 }
 .choose-theme ul{
 	margin: 0 0 20px;
@@ -97,7 +101,7 @@ a
 	margin:0 0 20px;
 	padding:0;
 	li{
-		padding:0 8px;
+		padding:8px;
 	}
 }
 .theme-list .theme-thumb{
@@ -129,16 +133,15 @@ a
 }
 #switcher .theme-list ul li{
 	display: block;
+	border-bottom: 1px solid #F1F1F1;
 }
 .theme-list a:hover .theme-thumb{
 	display: block;
 }
 .theme-list a{
-	border-bottom: 1px solid #F1F1F1;
 	color: #363636;
-	display: block;
+	display: inline;
 	font-weight: normal;
-	padding: 10px 0;
 	text-transform: capitalize;
 	position: relative;
 }
