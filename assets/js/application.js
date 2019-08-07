@@ -69,6 +69,7 @@ jQuery(document).ready(function($) {
 	
 	// responsive switcher
 	$( ".d" ).on( "click", function () {
+        $( "#responsive li a.active" ).removeClass('active');
 		$( "#frame_wrapper" ).removeClass().addClass( "desktop" );	
 		$( ".ipad, .iphone, .desktop" ).removeClass( "active" );
 		$( this ).addClass( "active" );
@@ -77,6 +78,7 @@ jQuery(document).ready(function($) {
 	});
 	
 	$( ".t" ).on( "click", function () {
+        $( "#responsive li a.active" ).removeClass('active');
 		$( "#frame_wrapper" ).removeClass().addClass( "tablet" );	
 		$( ".ipad, .iphone, .desktop" ).removeClass( "active" );
 		$( this ).addClass( "active" );	
@@ -85,6 +87,7 @@ jQuery(document).ready(function($) {
 	});
 		        	
 	$( ".m" ).on( "click", function () {
+        $( "#responsive li a.active" ).removeClass('active');
 		$( "#frame_wrapper" ).removeClass().addClass( "mobile" );
 		$('.ipad,.iphone,.desktop').removeClass( "active" );
 		$( this ).addClass( "active" );	
