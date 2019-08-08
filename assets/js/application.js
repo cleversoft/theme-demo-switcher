@@ -15,9 +15,20 @@ jQuery(document).ready(function($) {
 			$(productSlider).slideDown().addClass('open-demo');
 		}
 	});
-
-
-	
+    // thumbnail preview hover
+    $( ".wrap-theme-list li" ).on({
+        mouseenter: function(){
+            if($(this).find('img')[0]){
+                $('img#preview').show();
+                $('img#preview').attr('src',$(this).find('img').attr('src'));
+            }else{
+                $('img#preview').hide();
+            }
+        },
+        mouseleave: function(){
+            $( "#preview" ).hide();
+        }
+    });
 	// thumbnail preview hover
     $( "#aside ul li" ).on({
 	    mouseenter: function(){

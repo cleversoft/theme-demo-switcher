@@ -105,6 +105,9 @@ if (!isset($redirect)) :
                             <?php endforeach; ?>
                         </ul>
                     </div>
+                    <!-- preview thumbnails -->
+                    <img id="preview" src="" alt="Preview"/>
+                    <!-- /preview thumbnails -->
                     <!-- slideout theme switcher -->
                 </div>
 
@@ -174,11 +177,6 @@ if (!isset($redirect)) :
         </div>
     </div>
     <!-- /iframe wrapper that loads theme preview -->
-
-
-    <!-- preview thumbnails -->
-    <img id="preview" src="" alt="Preview"/>
-    <!-- /preview thumbnails -->
 
     </body>
     </html>
