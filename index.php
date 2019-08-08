@@ -134,7 +134,18 @@ if (!isset($redirect)) :
                 </li>
                 <li class="remove_frame" rel="<?php echo $current_theme_url; ?>">
                     <a href="<?php echo $current_theme_url; ?>" title="Remove Frame"><i
-                                class="cs-font clever-icon-close-1"></i></a>
+                                class="cs-font clever-icon-up"></i></a>
+                </li>
+            </ul>
+            <ul class="right list-action-links stick-button">
+                <li class="purchase" rel="<?php echo $current_theme_purchase_url; ?>">
+                    <a href="<?php echo $current_theme_purchase_url; ?>" target="_blank" title="Purchase Theme">
+                        <i class="cs-font clever-icon-cart-10"></i>
+                    </a>
+                </li>
+                <li class="remove_frame" rel="<?php echo $current_theme_url; ?>">
+                    <a href="<?php echo $current_theme_url; ?>" title="Remove Frame"><i
+                                class="cs-font clever-icon-down"></i></a>
                 </li>
             </ul>
             <!-- /purchase / close frame buttons -->

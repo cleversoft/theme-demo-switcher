@@ -2,9 +2,11 @@ html,
 body,
 #iframe 
 { 
-    min-height: 100%; 
+    min-height: calc(100% - 45px);
 }
-
+body{
+	overflow: hidden;
+}
 body,
 p,
 a,
@@ -32,6 +34,7 @@ a
 	position: fixed;
 	top: 0;
 	float: left;
+	transition: all 300ms;
 }
 
 #switcher .logo 
@@ -74,7 +77,7 @@ a
 	position: relative;
 	a{
 		display: inline;
-		padding:0;
+		padding:8px;
 	}
 }
 .choose-theme ul{
@@ -95,14 +98,12 @@ a
 	display: none;
 	overflow: hidden;
 	overflow-y: auto;
+	box-shadow: 0 0 30px -10px rgba(0,0,0,0.2);
 }
 .wrap-theme-list{
 	width: 100%;
 	margin:0 0 20px;
 	padding:0;
-	li{
-		padding:8px;
-	}
 }
 .theme-list .theme-thumb{
 	background-color: #fff;
@@ -390,17 +391,54 @@ img#preview
 	padding: 80px 30px 120px 30px;
 	
 }
-
+#wrapper{
+	height: 45px;
+	transition: all 300ms;
+}
 #frame_wrapper 
 {
-    height: 100%;
+    height: calc(100% - 45px);
 	position: relative;
 	z-index: 50;
-	margin: 45px auto 0;
+	margin: 0 auto;
+	transition: all 300ms;
 }
 
 #frame_wrapper.tablet iframe,
 #frame_wrapper.mobile iframe
 {
 	height: 82%!important;
+}
+.stick-button{
+	position: fixed;
+	right: 0;
+	top:0;
+	background: rgb(175, 88, 117);
+	transition: all 300ms;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1;
+	li a{
+		height: 100%;
+		&:hover{
+			background: transparent;
+			color: #fff;
+		}
+	}
+}
+body.full-preview{
+	#wrapper{
+		height: 0;
+	}
+	#frame_wrapper{
+		margin-top:0;
+		height: 100%;
+	}
+	#switcher{
+		top:-45px;
+	}
+	.stick-button{
+		opacity: 1;
+		visibility: visible;
+	}
 }

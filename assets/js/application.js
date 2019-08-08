@@ -96,4 +96,8 @@ jQuery(document).ready(function($) {
 	});
 	
 	$( ".d" ).addClass( "active" );
+	$(document).on('click','#switcher .remove_frame a',function (e) {
+		e.preventDefault();
+		$('body').toggleClass('full-preview');
+    })
 });
