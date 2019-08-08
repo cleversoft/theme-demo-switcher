@@ -78,9 +78,22 @@ h6
         width: 100%;
         max-width: 100%;
     }
+    .wrap-left, .list-action-links:not(.stick-button){
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 992px){
+    #switcher{
+        height: 45px;
+        .logo{
+            padding:12px 0 0 20px
+        }
+        a.themes-open{
+            width: auto;
+            padding:10px 35px 10px 15px
+        }
+    }
     .list-action-links li{
         a{
             width: 45px;
@@ -103,6 +116,10 @@ h6
                 font-size: 0;
                 line-height: 25px;
             }
+        }
+        &.remove_frame a{
+            padding:10px 15px;
+            height: 45px;
         }
     }
 }

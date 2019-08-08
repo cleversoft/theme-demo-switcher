@@ -1,10 +1,13 @@
 
 jQuery(document).ready(function($) {
 
-
+    $('#frame_wrapper iframe').load(function(){
+       $(this).parent().removeClass('loading');
+    });
     // theme switcher sidebar toggle
 
 	$( "a.themes-open" ).on( "click", function(e) {
+		$(this).toggleClass('selected');
 		var productSlider = $('.theme-list');
 		if($(productSlider).hasClass('open-demo')){
 			$(productSlider).slideUp().removeClass('open-demo');

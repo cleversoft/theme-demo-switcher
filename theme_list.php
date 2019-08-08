@@ -8,7 +8,7 @@
         "purchase" 	 => "http://www.zootemplate.com/pricing",
         "responsive" => "yes",
         "type"       => "joomla-theme",
-        "thumb"      => ""
+        "thumb"      => "http://192.168.1.30/apps/assets/thumbs/urip.png"
     ),
     array(
         "id" 		 => "zt-ghoster",
