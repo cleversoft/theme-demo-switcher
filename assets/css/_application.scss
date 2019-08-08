@@ -77,7 +77,7 @@ a
 	position: relative;
 	a{
 		display: inline;
-		padding:8px;
+		padding:8px 10px;
 	}
 }
 .choose-theme ul{
@@ -141,7 +141,8 @@ a
 .theme-list a{
 	border-bottom: 1px solid #F1F1F1;
 	color: #363636;
-	display: block;
+	display: flex;
+	justify-content: space-between;
 	font-weight: normal;
 	text-transform: capitalize;
 	position: relative;
@@ -153,6 +154,31 @@ a
 }
 .theme-list .theme-column:last-child{
 	padding-right: 0;
+}
+.item-tag{
+	font-size: 10px;
+	text-transform: uppercase;
+	background: #0071bd;
+	color: #fff;
+	padding:3px 5px;
+	border-radius: 2px;
+	line-height: 12px;
+	&.wordpress, &.wordpress-theme{
+		background: #207195;
+	}
+	&.plugin, &.wordpress-plugin{
+		background: #009bab;
+	}
+	&.magento, &.magento-theme{
+		background: #ea6426;
+	}&.extension, &.magento-extension{
+		background: #f74c00;
+	}
+	&.shopify, &.shopify-theme{
+		background: #91b947;
+	}&.app, &.shopify-app{
+		background: #00add0;
+	}
 }
 #responsive ul
 {

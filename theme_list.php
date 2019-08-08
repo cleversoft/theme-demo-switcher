@@ -14,7 +14,7 @@
         "url" 		 => "http://zt-ghoster.zoodemo.com/index.php/en/",
         "purchase" 	 => "http://www.zootemplate.com/pricing",
         "responsive" => "yes",
-        "type"       => "joomla",
+        "type"       => "wordpress",
         "thumb"      => ""
     ),
     array(
@@ -22,7 +22,7 @@
         "url" 		 => "http://zt-restaurant.zoodemo.com/index.php/en/",
         "purchase" 	 => "http://www.zootemplate.com/pricing",
         "responsive" => "yes",
-        "type"       => "joomla",
+        "type"       => "magento",
         "thumb"      => ""
     ),
     array(
@@ -30,7 +30,7 @@
         "url" 		 => "http://zt-hotel.zoodemo.com/index.php/en/",
         "purchase" 	 => "http://www.zootemplate.com/pricing",
         "responsive" => "yes",
-        "type"       => "joomla",
+        "type"       => "shopify",
         "thumb"      => ""
     ),
     array(
@@ -38,7 +38,7 @@
         "url" 		 => "http://zt-construction.zoodemo.com/index.php/en/",
         "purchase" 	 => "http://www.zootemplate.com/pricing",
         "responsive" => "yes",
-        "type"       => "joomla",
+        "type"       => "plugin",
         "thumb"      => ""
     ),
     array(
@@ -46,7 +46,7 @@
         "url" 		 => "http://zt-vela.zoodemo.com/index.php/en/",
         "purchase" 	 => "http://www.zootemplate.com/pricing",
         "responsive" => "yes",
-        "type"       => "joomla",
+        "type"       => "extension",
         "thumb"      => ""
     ),
     array(
@@ -54,7 +54,7 @@
         "url" 		 => "http://zt-car.zoodemo.com/index.php/en/",
         "purchase" 	 => "http://www.zootemplate.com/pricing",
         "responsive" => "yes",
-        "type"       => "joomla",
+        "type"       => "app",
         "thumb"      => ""
     ),
     array(
