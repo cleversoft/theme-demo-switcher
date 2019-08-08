@@ -1,6 +1,7 @@
 <?php $theme_array = array(
     array(
         "id" 		 => "zt-sebian",
+        "title" 	 => "Sebian",
         "url" 		 => "http://zt-sebian.zoodemo.com/index.php/en/",
         "desc" 		 => "Just another Joomla template",
         "docs" 		 => "https://docs.zootemplate.com/zt-sebian",

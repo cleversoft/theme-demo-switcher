@@ -92,7 +92,7 @@ if (!isset($redirect)) :
                         <?php foreach ($theme_array as $i => $theme) : ?>
                             <li class="type-<?php echo $theme['type'] ?>">
                                 <a href="?theme=<?php echo $theme['id']; ?>" rel="<?php echo $theme['url']; ?>,<?php echo $theme['purchase']; ?>">
-            						<span class="theme-name"> <?php echo $theme['id']; ?></span>
+            						<span class="theme-name"> <?php echo isset($theme['title'])?$theme['title']:$theme['id']; ?></span>
             						<span class="item-tag <?php echo $theme['type']; ?>"> <?php echo ucwords(str_replace('-', ' ', $theme['type'])); ?></span>
                                     <?php if ($theme['thumb'] != '') { ?>
                                         <span class="theme-thumb"><img src="<?php echo $theme['thumb']; ?>" alt="Theme Thumbnail"/></span>

@@ -74,7 +74,7 @@ a
 	position: relative;
 	a{
 		display: inline;
-		padding:8px 10px;
+		padding:10px 0;
 	}
 }
 .choose-theme ul{
@@ -87,7 +87,7 @@ a
 	margin: 0;
 	height: auto;
 	max-height: 65vh;
-	padding: 20px 0;
+	padding: 10px;
 	position: absolute;
 	top: 45px;
 	width: 350px;
@@ -99,7 +99,7 @@ a
 }
 .wrap-theme-list{
 	width: 100%;
-	margin:0 0 20px;
+	margin:0 0 10px;
 	padding:0;
 }
 .theme-list .theme-thumb{
