@@ -91,22 +91,9 @@ if (!isset($redirect)) :
                     <ul class="wrap-theme-list">
                         <?php foreach ($theme_array as $i => $theme) : ?>
                             <li class="type-<?php echo $theme['type'] ?>">
-                                <a href="?theme=<?php echo $theme['id']; ?>"
-                                   rel="<?php echo $theme['url']; ?>,<?php echo $theme['purchase']; ?>">
-						<span class="theme-name">
-							<?php
-                            $names = explode('-', $theme['id']);
-                            $theme_name = array();
-                            foreach ($names as $key => $name) {
-                                if ($key == 0) {
-                                    $theme_name[] = strtoupper($name);
-                                } else {
-                                    $theme_name[] = ucfirst($name);
-                                }
-
-                            }
-                            echo implode(' ', $theme_name); ?>
-						</span>
+                                <a href="?theme=<?php echo $theme['id']; ?>" rel="<?php echo $theme['url']; ?>,<?php echo $theme['purchase']; ?>">
+            						<span class="theme-name"> <?php echo $theme['id']; ?></span>
+            						<span class="item-tag"> <?php echo ucwords(str_replace('-', ' ', $theme['type'])); ?></span>
                                     <?php if ($theme['thumb'] != '') { ?>
                                         <span class="theme-thumb"><img src="<?php echo $theme['thumb']; ?>" alt="Theme Thumbnail"/></span>
                                     <?php } ?>
