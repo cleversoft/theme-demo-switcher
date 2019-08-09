@@ -73,7 +73,7 @@ if (!isset($redirect)) :
             <div class="wrap-left">
                 <!-- logo -->
                 <a class="logo" href="<?php echo $site_url; ?>" title="<?php echo $author; ?>">
-                    <img src="assets/img/cleveraddon.svg" style="height:30px" alt="<?php echo $author; ?>"/>
+                    <img src="assets/img/logo.svg" style="height:30px" alt="<?php echo $author; ?>"/>
                 </a>
                 <!-- /logo -->
                 <div class="choose-theme">
