@@ -1,0 +1,24 @@
+/.gitignore
+
+# IDE & System Related Files
+.buildpath
+.project
+.settings
+
+# OSX 
+._*
+.Spotlight-V100
+.Trashes
+.DS_Store
+
+# Windows 
+Thumbs.db
+Desktop.ini
+
+# IntelliJ - PhpStorm and PyCharm
+.idea
+.idea/
+.idea/*
+*.iml
+*.ipr
+*.iws
