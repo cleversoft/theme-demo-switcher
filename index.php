@@ -10,6 +10,7 @@ if (!isset($redirect)) :
     foreach ($theme_array as $i => $theme) {
         $theme_config = array_merge([
             'id' => 'Untitled',
+            'title' => 'Theme Name',
             'url' => 'https://zootemplate.com',
             'docs' => '#',
             'purchase' => '#',
@@ -18,7 +19,7 @@ if (!isset($redirect)) :
             'type' => 'wordpress-theme',
         ], $theme);
         if ($theme['id'] == $current_theme) {
-            $current_theme_name = ucfirst($theme_config['id']);
+            $current_theme_name =  isset($theme_config['title']) ? $theme_config['title'] : ucfirst($theme_config['id']);
             $current_theme_url = $theme_config['url'];
             $current_theme_docs_url = $theme_config['docs'];
             $current_theme_purchase_url = $theme_config['purchase'];
@@ -27,7 +28,7 @@ if (!isset($redirect)) :
         }
     }
     if ($theme_found == false) {
-        $current_theme_name = ucfirst($theme_array[0]['id']);
+        $current_theme_name = isset($theme_array[0]['title']) ? $theme_array[0]['title'] :ucfirst($theme_array[0]['id']);
         $current_theme_url = $theme_array[0]['url'];
         $current_theme_docs_url = $theme_array[0]['docs'];
         $current_theme_purchase_url = $theme_array[0]['purchase'];
