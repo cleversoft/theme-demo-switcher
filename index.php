@@ -10,7 +10,6 @@ if (!isset($redirect)) :
     foreach ($theme_array as $i => $theme) {
         $theme_config = array_merge([
             'id' => 'Untitled',
-            'desc' => 'Just another zootemplate.',
             'url' => 'https://zootemplate.com',
             'docs' => '#',
             'purchase' => '#',
@@ -20,7 +19,6 @@ if (!isset($redirect)) :
         ], $theme);
         if ($theme['id'] == $current_theme) {
             $current_theme_name = ucfirst($theme_config['id']);
-            $current_theme_desc = $theme_config['desc'];
             $current_theme_url = $theme_config['url'];
             $current_theme_docs_url = $theme_config['docs'];
             $current_theme_purchase_url = $theme_config['purchase'];
@@ -30,7 +28,6 @@ if (!isset($redirect)) :
     }
     if ($theme_found == false) {
         $current_theme_name = ucfirst($theme_array[0]['id']);
-        $current_theme_desc = $theme_array[0]['desc'];
         $current_theme_url = $theme_array[0]['url'];
         $current_theme_docs_url = $theme_array[0]['docs'];
         $current_theme_purchase_url = $theme_array[0]['purchase'];
@@ -43,7 +40,7 @@ if (!isset($redirect)) :
         <title><?php if ($theme_found == false) {
                 echo $description;
             } else {
-                echo $current_theme_name . ' - ' . $current_theme_desc;
+                echo $current_theme_name;
             } ?></title>
 
         <!-- meta -->
@@ -79,7 +76,7 @@ if (!isset($redirect)) :
                 </a>
                 <!-- /logo -->
                 <div class="choose-theme">
-                    <a class="themes-open" href="javascript:void(0)">Select Product<i
+                    <a class="themes-open" href="javascript:void(0)"><?php echo $current_theme_name;?><i
                                 class="cs-font clever-icon-down"></i></a>
                     <?php
                     $number_item = floor(count($theme_array) / 4);
