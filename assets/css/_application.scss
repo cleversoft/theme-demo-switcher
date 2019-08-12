@@ -142,6 +142,7 @@ a
 	font-weight: normal;
 	text-transform: capitalize;
 	position: relative;
+	align-items: flex-start;
 }
 .theme-list .theme-column{
 	width: 25%;
@@ -159,6 +160,7 @@ a
 	padding:3px 5px;
 	border-radius: 2px;
 	line-height: 12px;
+	white-space: nowrap;
 	&.wordpress, &.wordpress-theme{
 		background: #207195;
 	}
