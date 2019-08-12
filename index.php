@@ -50,7 +50,7 @@ if (!isset($redirect)) :
         <meta name="author" content="<?php echo $author; ?>">
         <meta name="description" content="<?php echo $description; ?>">
 
-        <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+        <link href="assets/img/favicon.png" rel="shortcut icon" type="image/x-icon"/>
 
         <link rel="stylesheet" href="assets/slick/slick.css"/>
         <link rel="stylesheet" href="assets/clever-font/style.css"/>
