@@ -665,7 +665,7 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   padding: 15px 35px 15px 15px;
-  line-height: 25px;
+  line-height: 24px;
   float: left;
   width: 350px;
   position: relative; }
@@ -828,8 +828,7 @@ a {
   font-size: 12px;
   float: left;
   padding: 15px 25px;
-  line-height: 24px;
-  margin-right: 1px; }
+  line-height: 24px; }
   .list-action-links li a i {
     padding-right: 3px; }
 
@@ -844,7 +843,7 @@ a {
 .list-action-links li.remove_frame a {
   background: #0A1D33;
   padding: 14px 18px;
-  height: 55px;
+  height: 54px;
   margin: 0; }
 
 .list-action-links li a:hover {
